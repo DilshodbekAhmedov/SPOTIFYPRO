@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -83,9 +84,9 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'spotify',
-        'USER': 'postgres',
-        'PASSWORD': '990380971@@',
+        'NAME': "spotify_actions",
+        'USER': "spotify_actions",
+        'PASSWORD': "990380971@@",
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
